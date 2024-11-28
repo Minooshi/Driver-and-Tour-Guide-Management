@@ -1,0 +1,116 @@
+.client-view {
+  text-align: center;
+  padding: 40px;
+  font-family: 'Poppins', sans-serif; /* Adding a modern font */
+  background-color: #f0f4f8; /* Light background color */
+  min-height: 100vh;
+}
+
+h2 {
+  font-size: 32px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-transform: uppercase; /* Adds emphasis to the main title */
+}
+
+h3 {
+  font-size: 26px;
+  color: #34495e;
+  margin-bottom: 15px;
+  font-weight: 500;
+}
+
+.schedule-appointment, .upcoming-appointments, .previous-appointments {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Adding shadow for better depth */
+  width: 80%;
+  max-width: 900px; /* Limiting the maximum width for better readability */
+}
+
+.button-group {
+  margin-top: 30px;
+}
+
+.btn {
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow to buttons */
+}
+
+.btn:hover {
+  background-color: #45a049;
+  transform: translateY(-2px); /* Adds a subtle lift effect on hover */
+}
+
+.schedule-btn {
+  background-color: #3498db; /* Blue */
+}
+
+.schedule-btn:hover {
+  background-color: #2980b9;
+}
+
+.appointment-status {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e3f2fd; /* Light blue background for status */
+  border: 1px solid #bbdefb;
+  border-radius: 8px;
+  display: inline-block;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Shadow for better emphasis */
+}
+
+.appointment-status p {
+  font-size: 18px;
+  color: #2c3e50;
+  margin: 0;
+}
+
+.back-button {
+  margin-top: 40px;
+}
+
+.go-back-btn {
+  background-color: #ff5722; /* Orange */
+  padding: 15px 40px;
+  font-size: 16px;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.go-back-btn:hover {
+  background-color: #e64a19;
+  transform: translateY(-2px);
+}
+
+/* Upcoming and Previous Appointments Styles */
+.upcoming-appointments ul, .previous-appointments ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.upcoming-appointments li, .previous-appointments li {
+  font-size: 18px;
+  margin: 10px 0;
+  padding: 15px;
+  background-color: #ecf0f1;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: #2c3e50;
+}

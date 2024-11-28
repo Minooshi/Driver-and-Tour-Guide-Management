@@ -1,0 +1,116 @@
+.todos-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 3rem;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.title {
+    text-align: center;
+    color: #1C39BB;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.todos-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-item {
+    background-color: #f1f5f9;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+    opacity: 1;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.todo-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.todo-title {
+    color: #1C39BB;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.todo-description {
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+.todo-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    color: #555;
+}
+
+
+.todo-details p {
+    margin: 0;
+}
+
+.todo-details span {
+    font-weight: 600;
+    color: #333;
+}
+
+.error-message {
+    color: #dc3545;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.edit-form {
+    margin-top: 1rem;
+}
+
+.edit-form input, .edit-form textarea, .edit-form select {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+}
+
+.edit-form button {
+    margin-right: 1rem;
+}
+
+.btn {
+    margin-right: 0.5rem;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
